@@ -1,4 +1,4 @@
-package com.klaxit.hiddensecrets
+package com.rot13.hiddensecrets
 
 import com.android.build.gradle.AppExtension
 import org.gradle.api.Action

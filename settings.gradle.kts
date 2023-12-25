@@ -1,6 +1,6 @@
 rootProject.name = "HiddenSecretsPlugin"
 
 gradle.allprojects {
-    group = "com.klaxit.hiddensecrets"
-    version = "0.2.1"
+    group = "com.rot13.hiddensecrets"
+    version = "1.0.0"
 }

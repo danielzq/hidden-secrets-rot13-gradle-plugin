@@ -30,10 +30,19 @@
 */
 
 char *customDecode(char *str) {
-    /* Add your own logic here
-    * To improve your key security you can encode it before to integrate it in the app.
-    * And then decode it with your own logic in this function.
-    */
+    int c = 13;
+    int l = strlen(str);
+    const char *alpha[2] = { "abcdefghijklmnopqrstuvwxyz", "ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+    int i;
+    for (i = 0; i < l; i++)
+    {
+        if (!isalpha(str[i]))
+            continue;
+        if (isupper(str[i]))
+            str[i] = alpha[1][((int)(tolower(str[i]) - 'a') + c) % 26];
+        else
+            str[i] = alpha[0][((int)(tolower(str[i]) - 'a') + c) % 26];
+    }
     return str;
 }
 

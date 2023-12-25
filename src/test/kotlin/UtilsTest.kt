@@ -1,4 +1,4 @@
-import com.klaxit.hiddensecrets.Utils
+import com.rot13.hiddensecrets.Utils
 import io.kotest.core.spec.style.WordSpec
 import io.kotest.matchers.shouldBe
 import java.io.File
@@ -8,17 +8,17 @@ import java.io.File
  */
 class UtilsTest : WordSpec({
 
-    val packageName = "com.klaxit.test"
+    val packageName = "com.rot13.test"
 
     "Using getCppName()" should {
         "transform package separator" {
-            Utils.getCppName(packageName) shouldBe "com_klaxit_test"
+            Utils.getCppName(packageName) shouldBe "com_rot13_test"
         }
         "transform package with underscore" {
-            Utils.getCppName("com.klaxit.test_with_underscore") shouldBe "com_klaxit_test_1with_1underscore"
+            Utils.getCppName("com.rot13.test_with_underscore") shouldBe "com_rot13_test_1with_1underscore"
         }
         "transform package with escaping characters" {
-            Utils.getCppName("com[test.klaxit;test.test_with_underscore") shouldBe "com_3test_klaxit_2test_test_1with_1underscore"
+            Utils.getCppName("com[test.rot13;test.test_with_underscore") shouldBe "com_3test_rot13_2test_test_1with_1underscore"
         }
     }
 

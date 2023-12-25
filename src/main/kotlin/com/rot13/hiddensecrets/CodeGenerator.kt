@@ -1,4 +1,4 @@
-package com.klaxit.hiddensecrets
+package com.rot13.hiddensecrets
 
 /**
  * Helper to generate C++ and Kotlin code

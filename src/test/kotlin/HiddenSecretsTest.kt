@@ -1,4 +1,4 @@
-import com.klaxit.hiddensecrets.HiddenSecretsPlugin
+import com.rot13.hiddensecrets.HiddenSecretsPlugin
 import io.kotest.core.spec.style.WordSpec
 import io.kotest.matchers.string.shouldContain
 import org.gradle.testkit.runner.GradleRunner
@@ -15,7 +15,7 @@ class HiddenSecretsTest : WordSpec({
         val buildFile = testProjectDir.newFile("build.gradle")
         buildFile.appendText("""
         plugins {
-            id 'com.klaxit.hiddensecrets'
+            id 'com.rot13.hiddensecrets'
             id 'com.android.application'
         }
         android {

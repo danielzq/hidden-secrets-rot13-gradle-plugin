@@ -1,4 +1,4 @@
-package com.klaxit.hiddensecrets
+package com.rot13.hiddensecrets
 
 import com.google.common.annotations.VisibleForTesting
 import org.gradle.api.Project

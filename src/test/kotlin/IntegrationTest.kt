@@ -1,4 +1,4 @@
-import com.klaxit.hiddensecrets.HiddenSecretsPlugin
+import com.rot13.hiddensecrets.HiddenSecretsPlugin
 import io.kotest.core.spec.style.WordSpec
 import io.kotest.data.Row4
 import io.kotest.datatest.withData
@@ -22,7 +22,7 @@ class IntegrationTest : WordSpec({
         buildFile.appendText(
             """
         plugins {
-            id 'com.klaxit.hiddensecrets'
+            id 'com.rot13.hiddensecrets'
             id 'com.android.application'
         }
         android {
